@@ -202,6 +202,9 @@ body{
     transform: translateY(-50%);
 }
 @media(max-width:910px){
+    .header{
+        padding-bottom: 0;
+    }
     .header-nav__toggle{
         display: block;
     }
@@ -237,10 +240,13 @@ body{
         margin-top: 22px;
         width: 100%;
     }
-}
-@media(max-width:360px){
     .header-top__info{
-        font-size: 15px;
+        font-size: 14px;
+    }
+}
+@media(max-width:430px){
+    .header-top__info{
+        font-size: 12px;
     }
 }
 /* =================================/HEADER============================== */
@@ -254,10 +260,10 @@ body{
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
-    transition: all .6s;
+    transition: all .3s;
 }
 .hero--active{
-    margin-top: 130px;
+    margin-top: 230px;
 }
 .hero-wrapper,.hero-content__wrapper{
     display: flex;
@@ -460,23 +466,39 @@ body{
     background-color: #b8733a;
 } */
 
-@media(max-width:930px){
-    .problem__title{
-        margin-bottom: 40px;
-    }
-    .problem__wrapper{
+@media(max-width:830px){
+    .problem__list-item{
         flex-direction: column;
-        align-items: center;
-    }
-    .problem__list{
+        text-align: center;
         width: 100%;
     }
-}
-@media(max-width:440px){
-    .problem__list-item {
-        font-size: 16px;
+    .problem__list-wrapper{
+        justify-content: flex-start;
+        width: 100%;
     }
-} 
+    .problem__list-number{
+        margin-right: 0;
+    }
+    .problem__list-title{
+        margin-bottom: 20px;
+        text-align: left;
+        margin-left: 22px;
+    }
+    .problem__list-text{
+        text-align: justify;
+        width: 83%;
+        margin-left: 40px;
+
+    }
+}
+@media(max-width:480px){
+    .problem__list-title{
+        font-size: 20px;  
+    }
+    .problem__list-text{
+        font-size: 17px;
+    }
+}
 /* =================================/PROBLEM============================== */
 
 /* =================================CHOICE============================== */
