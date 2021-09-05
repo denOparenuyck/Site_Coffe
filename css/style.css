@@ -576,7 +576,7 @@ body{
 
 @media(max-width:480px){
     .choice__list {
-        grid-template-columns: repeat(auto-fill, 50%);
+        grid-template-columns: repeat(auto-fill, 100%);
         grid-column-gap: 0px;
     }
     .choice__item {
@@ -584,10 +584,10 @@ body{
         padding: 20px 10px;
     }
     .choice__item-title {
-        font-size: 16px;
+        font-size: 20px;
     }
     .choice__item-list li{
-        font-size: 12px;
+        font-size: 16px;
     }
     .choice__item:first-child,
     .choice__item:nth-child(10){
