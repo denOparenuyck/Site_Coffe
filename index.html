@@ -34,13 +34,13 @@
             <nav class="header-nav">
                 <ul class="header-nav__list">
                     <li class="header-nav__item">
-                        <a class="header-nav__link" href="#">Услуги и цены</a>
+                        <a class="header-nav__link" href="#choice">Услуги и цены</a>
                     </li>
                     <li class="header-nav__item">
-                        <a class="header-nav__link" href="#">О компании</a>
+                        <a class="header-nav__link" href="#advantages">О компании</a>
                     </li>
                     <li class="header-nav__item">
-                        <a class="header-nav__link" href="#">Контакты</a>
+                        <a class="header-nav__link" href="#footer">Контакты</a>
                     </li>
                 </ul>
                 <a class="header-nav__number" href="tel:+8 900 632 5072">8 (900) 632-50-72</a>
@@ -142,71 +142,49 @@
                     <li class="problem__list-item">
                         <div class="problem__list-wrapper">
                             <span class="problem__list-number">1.</span>
-                            <h3 class="problem__list-title">Заявка на сайте
-                                или звонок
+                            <h3 class="problem__list-title">Вы оставляете заявку на сайте
                             </h3>
                         </div>
-                        <p class="problem__list-text">
-                            Позвоните нам по телефону +7 812 561-00-35 или
-                            оставьте заявку на сайте
-                        </p>
                     </li>
                     <li class="problem__list-item">
                         <div class="problem__list-wrapper">
                             <span class="problem__list-number">2.</span>
-                            <h3 class="problem__list-title">Приезд мастера
-                                и бесплатная
-                                диагностика
+                            <h3 class="problem__list-title">С вами связывается специалист технической службы, вы
+                                оговариваете
+                                дату, время и примерную стоимость. После диагностики сразу называем конечную стоимость -
+                                никаких
+                                дополнительных затрат и роста цены во время ремонта!
                             </h3>
                         </div>
-                        <p class="problem__list-text">
-                            Приезжает мастер и проводит диагностику.
-                            Диагностика бесплатна, если вы согласны на
-                            дальнейший ремонт. В случае отказа от ремонта вы
-                            оплачиваете только выезд мастера — 490 рублей.
-                        </p>
                     </li>
                     <li class="problem__list-item">
                         <div class="problem__list-wrapper">
                             <span class="problem__list-number">3.</span>
                             <h3 class="problem__list-title">
-                                Определение
-                                цены и начало
-                                ремонта
+                                Мастер ремонтирует кофемашину, в среднем 45 минут. В случае
+                                сложного ремонта, лучше ремонтировать в сервисном центре.
                             </h3>
                         </div>
-                        <p class="problem__list-text">
-                            Мастер сообщает результат диагностики и
-                            стоимость ремонта. Только после вашего согласия
-                            мастер начинает ремонт кофемашины. Перед
-                            началом работы мастер попросит подписать
-                            договор об оказании услуг.
-                        </p>
                     </li>
                     <li class="problem__list-item">
                         <div class="problem__list-wrapper">
                             <span class="problem__list-number">4.</span>
-                            <div class="problem__list-title">
-                                <img class="problem-img__style" src="images/men-img.png" alt="Coffee machine">
-                            </div>
+                            <h3 class="problem__list-title">
+                                Вы получаете отремонтированную кофемашину
+                            </h3>
                         </div>
-                        <p class="problem__list-text">
-                            Мастер ремонтирует кофемашину. Вы принимаете
-                            результат работы и получаете гарантийный талон.
-                            После оплаты работ, мастер выдаст вам квитанцию
-                            (5с0-1)
-                        </p>
                     </li>
-
+                    <li>
+                        <img class="problem-img__style" src="images/men-img.png" alt="Coffee machine">
+                    </li>
                 </ul>
-
             </div>
         </div>
     </section>
     <!-- ===========================/PROBLEM======================== -->
 
     <!-- ===========================CHOICE======================== -->
-    <section class="choice">
+    <section class="choice" id="choice">
         <div class="container">
             <h2 class="choice__title title"><span>Выберите</span> неисправность</h2>
             <ul class="choice__list">
@@ -345,7 +323,7 @@
 
     <!-- ===========================ADVANTAGES======================== -->
     <div class="container">
-        <section class="advantages">
+        <section class="advantages" id="advantages">
             <h2 class="advantages__title title"><span>Наши</span> преимущества</h2>
             <ul class="advantages__list">
                 <li class="advantages__item">
@@ -508,7 +486,7 @@
 
 
     <!-- ===========================FOOTER======================== -->
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="container">
             <div class="footer__wrapper">
                 <ul class="footer__list">
@@ -571,7 +549,7 @@
 
 
 
-    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/smooth-scroll.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 

@@ -405,6 +405,7 @@ body{
     border: 2px solid #372214;
     box-shadow: 0px 0px 10px;
     padding: 25px;
+    position: relative;
 }
 
 .problem__list-item + .problem__list-item{
@@ -418,10 +419,9 @@ body{
     justify-content: space-between;
 }
 .problem__list-wrapper {
-    width: 35%;
+    width: 70%;
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
 }
 .problem__list-number {
     padding: 4px 5px;
@@ -436,14 +436,12 @@ body{
     font-size: 30px;
     line-height: 1em;
 }
-.problem__list-text {
-    width: 60%;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 1em;
-}
 .problem-img__style{
-    width: 300px;
+    width: 350px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 
@@ -466,37 +464,19 @@ body{
     background-color: #b8733a;
 } */
 
-@media(max-width:830px){
-    .problem__list-item{
-        flex-direction: column;
-        text-align: center;
-        width: 100%;
+@media(max-width:930px){
+    .problem__list-wrapper {
+        width: 100%;;
     }
-    .problem__list-wrapper{
-        justify-content: flex-start;
-        width: 100%;
-    }
-    .problem__list-number{
-        margin-right: 0;
-    }
-    .problem__list-title{
-        margin-bottom: 20px;
-        text-align: left;
-        margin-left: 22px;
-    }
-    .problem__list-text{
-        text-align: justify;
-        width: 83%;
-        margin-left: 40px;
-
+    .problem-img__style{
+        position: static;
+        margin: 0 auto;
+        padding-top: 20px;
     }
 }
 @media(max-width:480px){
     .problem__list-title{
-        font-size: 20px;  
-    }
-    .problem__list-text{
-        font-size: 17px;
+        font-size: 18px; 
     }
 }
 /* =================================/PROBLEM============================== */

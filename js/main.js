@@ -18,3 +18,12 @@ headerToggle.addEventListener('click', () => {
     headerList.classList.toggle('header-nav__list--active');
     hero.classList.toggle('hero--active');
  });
+
+
+
+
+
+
+ new SmoothScroll('a[href*="#"]', {
+	speed: 300
+});
