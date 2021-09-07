@@ -63,7 +63,7 @@ body{
 }
 
 .container{
-    max-width: 1040px;
+    max-width: 1260px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -484,10 +484,10 @@ body{
 /* =================================CHOICE============================== */
 .choice__list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 240px);
+    grid-template-columns: repeat(auto-fill, 300px);
+    grid-gap: 10px;
     justify-content: center;
-    grid-column-gap: 10px;
-    grid-row-gap: 20px;
+    counter-reset: num 0;
 }
 .choice__item{
     height: 100%;
@@ -495,30 +495,20 @@ body{
     color: #818689;
     padding: 35px 45px 40px 20px;
     position: relative;
-    margin: 10px;
+    border: 1px solid #563f3b;
+    counter-increment: num 1;
 }
-
-.choice__item:first-child,
-.choice__item:nth-child(10){
+.choice__item:last-child{
     grid-column: span 2;
-    color: #fff;
-    background: linear-gradient(to right, #000, #ffff);
-    border: 5px solid #000;
-    max-width: 470px;
 }
-
-
-.choice__item:first-child .choice__item-title,
-.choice__item:nth-child(10) .choice__item-title{
-    color: #fff;
-}
-.choice__item:first-child .choice__item-img,
-.choice__item:nth-child(10) .choice__item-img{
-    width: 40%;
-    height: 100%;
+.choice__item::before{
+    content: counter(num);
+    font-size: 150px;
+    opacity: .1;
     position: absolute;
+    bottom: 0;
+    right: 0;
 }
-
 .choice__item-price{
     position: absolute;
     bottom: 20px;
@@ -526,6 +516,8 @@ body{
     font-weight: bold;
 }
 .choice__item-img{
+    width: 30%;
+    height: 100%;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -576,14 +568,15 @@ body{
     }
 }
 
-@media(max-width:480px){
+@media(max-width:640px){
     .choice__list {
         grid-template-columns: repeat(auto-fill, 100%);
-        grid-column-gap: 0px;
+        grid-column-gap: 10px;
     }
     .choice__item {
         height: 100%;
         padding: 20px 10px;
+        grid-column: span 2;
     }
     .choice__item-title {
         font-size: 20px;
@@ -591,22 +584,9 @@ body{
     .choice__item-list li{
         font-size: 16px;
     }
-    .choice__item:first-child,
-    .choice__item:nth-child(10){
-        grid-column: span 1;
-        border: none;
-        background: #fff;
-        color: #818689;
-    }
-    .choice__item:first-child .choice__item-title,
-    .choice__item:nth-child(10) .choice__item-title{
-        color: #1f1f1f;
-    }
-    .choice__item:first-child .choice__item-img,
-    .choice__item:nth-child(10) .choice__item-img{
+    .choice__item-img{
         display: none;
     }
-
 }
 /* =================================/CHOICE============================== */
 
